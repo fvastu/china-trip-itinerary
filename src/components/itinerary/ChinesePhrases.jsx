@@ -140,15 +140,15 @@ function SpeakButton({ zh, pinyin }) {
     <button
       onClick={speak}
       title={`Pronuncia: ${pinyin}`}
-      className={`shrink-0 rounded-full p-1.5 transition-all ${
+      className={`shrink-0 rounded-full p-3 transition-all active:scale-90 ${
         speaking
           ? "bg-primary/15 text-primary"
           : "bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary"
       }`}
     >
       {speaking
-        ? <Loader className="h-3.5 w-3.5 animate-spin" />
-        : <Volume2 className="h-3.5 w-3.5" />}
+        ? <Loader className="h-4 w-4 animate-spin" />
+        : <Volume2 className="h-4 w-4" />}
     </button>
   );
 }
@@ -160,12 +160,12 @@ function PhraseRow({ phrase, index }) {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-20px" }}
       transition={{ duration: 0.3, delay: index * 0.03 }}
-      className="flex items-center gap-3 rounded-xl border border-border bg-card px-3 py-3"
+      className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3.5"
     >
       <div className="flex-1 min-w-0">
-        <p className="font-body text-[11px] text-muted-foreground mb-0.5 leading-tight">{phrase.it}</p>
-        <p className="font-display text-sm font-semibold text-foreground leading-tight">{phrase.zh}</p>
-        <p className="font-body text-[11px] text-primary mt-0.5 italic truncate">{phrase.pinyin}</p>
+        <p className="font-body text-[11px] text-muted-foreground leading-tight mb-1">{phrase.it}</p>
+        <p className="font-display text-xl font-semibold text-foreground leading-tight">{phrase.zh}</p>
+        <p className="font-body text-xs text-primary mt-0.5">{phrase.pinyin}</p>
       </div>
       <SpeakButton zh={phrase.zh} pinyin={phrase.pinyin} />
     </motion.div>

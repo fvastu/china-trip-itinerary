@@ -24,51 +24,51 @@ export default function DayCard({ day, date, title, items }) {
       className="relative"
     >
       {/* Day header */}
-      <div className="flex items-baseline gap-4 mb-6">
-        <span className="font-display text-4xl md:text-5xl font-bold text-primary/20">
+      <div className="flex items-baseline gap-3 mb-5">
+        <span className="font-display text-4xl font-bold text-primary/20">
           {day}
         </span>
         <div>
-          <p className="font-body text-xs tracking-[0.2em] uppercase text-muted-foreground">
+          <p className="font-body text-[11px] tracking-[0.2em] uppercase text-muted-foreground">
             {date}
           </p>
-          <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground">
+          <h3 className="font-display text-lg font-semibold text-foreground">
             {title}
           </h3>
         </div>
       </div>
 
       {/* Timeline items */}
-      <div className="ml-1 border-l-2 border-border pl-4 md:pl-8 space-y-4">
+      <div className="ml-1 border-l-2 border-border pl-4 space-y-5">
         {items.map((item, idx) => {
           const Icon = iconMap[item.icon] || MapPin;
           return (
             <div
               key={idx}
-              className={`relative pb-2 ${
+              className={`relative ${
                 item.highlight
-                  ? "bg-accent/50 -ml-4 md:-ml-8 pl-4 md:pl-8 pr-3 py-3 rounded-r-lg border-l-2 border-primary"
-                  : ""
+                  ? "bg-accent/50 -ml-4 pl-4 pr-3 py-3 rounded-r-xl border-l-2 border-primary"
+                  : "pb-1"
               }`}
             >
-              {/* Dot on timeline */}
+              {/* Dot */}
               <div
-                className={`absolute top-1 w-2.5 h-2.5 rounded-full border-2 ${
+                className={`absolute top-1.5 w-2.5 h-2.5 rounded-full border-2 ${
                   item.highlight
-                    ? "bg-primary border-primary -left-[calc(1rem+7px)] md:-left-[calc(2rem+7px)]"
-                    : "bg-background border-muted-foreground/30 -left-[calc(1rem+5px)] md:-left-[calc(2rem+5px)]"
+                    ? "bg-primary border-primary -left-[calc(1rem+7px)]"
+                    : "bg-background border-muted-foreground/30 -left-[calc(1rem+5px)]"
                 }`}
               />
 
               {item.time && (
-                <p className="font-body text-xs font-medium text-primary mb-1">
+                <p className="font-body text-[11px] font-semibold text-primary mb-1 tracking-wide">
                   {item.time}
                 </p>
               )}
               <div className="flex items-start gap-2">
                 <Icon className="w-3.5 h-3.5 text-muted-foreground mt-0.5 shrink-0" />
                 <div className="flex-1 min-w-0">
-                  <p className="font-body text-sm font-medium text-foreground">
+                  <p className="font-body text-sm font-medium text-foreground leading-snug">
                     {item.title}
                   </p>
                   {item.description && (
@@ -79,7 +79,7 @@ export default function DayCard({ day, date, title, items }) {
                   {item.attraction && (
                     <button
                       onClick={() => setOpenAttraction(item.attraction)}
-                      className="mt-2 inline-flex items-center gap-1.5 text-xs font-body font-medium text-primary hover:text-primary/70 transition-colors bg-primary/10 hover:bg-primary/15 px-2.5 py-1 rounded-full"
+                      className="mt-2 inline-flex items-center gap-1.5 text-xs font-body font-medium text-primary bg-primary/10 active:bg-primary/20 px-3 py-1.5 rounded-full"
                     >
                       <Camera className="w-3 h-3" />
                       Storia & Foto

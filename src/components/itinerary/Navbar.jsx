@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Menu, X, ChevronLeft } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const cities = [
@@ -17,6 +17,8 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 100);
@@ -32,10 +34,21 @@ export default function Navbar() {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-background/90 backdrop-blur-md border-b border-border shadow-sm' : 'bg-transparent'}`}>
-        <div className="max-w-6xl mx-auto px-4 md:px-6 flex items-center justify-between h-14">
-          <Link to="/" className="font-display text-lg font-bold text-foreground hover:text-primary transition-colors">
-            🇨🇳 Cina 2026
-          </Link>
+        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
+          {/* Left: back button or logo */}
+          {!isHome ? (
+            <button
+              onClick={() => navigate(-1)}
+              className="flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors -ml-1 p-1"
+            >
+              <ChevronLeft className="w-5 h-5" />
+              <span className="font-body text-sm">Indietro</span>
+            </button>
+          ) : (
+            <Link to="/" className="font-display text-base font-bold text-foreground hover:text-primary transition-colors">
+              🇨🇳 Cina 2026
+            </Link>
+          )}
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-6">

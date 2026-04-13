@@ -90,72 +90,71 @@ export default function Home() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative flex min-h-[60svh] items-center justify-center overflow-hidden pt-14">
+      <section className="relative flex min-h-[55svh] items-center justify-center overflow-hidden pt-14">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-        <div className="relative z-10 text-center px-5 max-w-2xl mx-auto">
+        <div className="relative z-10 text-center px-6 max-w-2xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <p className="font-body text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">
+            <p className="font-body text-[11px] tracking-[0.3em] uppercase text-muted-foreground mb-4">
               19 Aprile – 2 Maggio 2026
             </p>
-            <h1 className="font-display text-5xl sm:text-6xl md:text-8xl font-bold leading-none text-foreground mb-2">
+            <h1 className="font-display text-[72px] sm:text-8xl font-bold leading-none text-foreground mb-1">
               Cina
             </h1>
-            <p className="font-display text-xl sm:text-2xl italic text-primary mb-6">中國</p>
-            <div className="w-14 h-[2px] bg-primary mx-auto mb-6" />
-            <p className="font-body text-sm md:text-base text-muted-foreground leading-relaxed max-w-md mx-auto">
-              Da Pechino a Shanghai, attraverso antiche mura, montagne sospese nel cielo e sapori indimenticabili.
+            <p className="font-display text-2xl italic text-primary mb-5">中國</p>
+            <div className="w-10 h-[2px] bg-primary mx-auto mb-5" />
+            <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-xs mx-auto">
+              Da Pechino a Shanghai, attraverso antiche mura, montagne sospese e sapori indimenticabili.
             </p>
           </motion.div>
         </div>
       </section>
 
-      <main className="max-w-4xl mx-auto px-4 md:px-6 pb-20">
+      <main className="max-w-4xl mx-auto px-4 pb-24">
 
         {/* Quick links */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="grid grid-cols-2 gap-3 mb-16 sm:grid-cols-4"
+          className="grid grid-cols-2 gap-2.5 mb-12 sm:grid-cols-4"
         >
           {quickLinks.map(({ to, icon: Icon, label, sub }) => (
             <Link
               key={to}
               to={to}
-              className="flex flex-col items-center gap-2 bg-card border border-border rounded-2xl p-4 hover:border-primary/40 hover:bg-primary/5 transition-all group text-center"
+              className="flex flex-col items-center gap-2 bg-card border border-border rounded-2xl p-4 active:scale-95 hover:border-primary/40 hover:bg-primary/5 transition-all group text-center"
             >
-              <div className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <Icon className="w-4 h-4 text-primary" />
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <Icon className="w-5 h-5 text-primary" />
               </div>
-              <span className="font-display text-[11px] font-semibold text-foreground leading-tight text-center">{label}</span>
-              <span className="font-body text-[10px] text-muted-foreground hidden sm:block">{sub}</span>
+              <span className="font-display text-xs font-semibold text-foreground leading-tight">{label}</span>
             </Link>
           ))}
         </motion.div>
 
         {/* City cards */}
-        <div className="mb-4">
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-muted-foreground mb-2">Tappe</p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">Il Percorso</h2>
-          <div className="w-10 h-[2px] bg-primary mt-4 mb-10" />
+        <div className="mb-8">
+          <p className="font-body text-[11px] tracking-[0.3em] uppercase text-muted-foreground mb-1">Tappe</p>
+          <h2 className="font-display text-3xl font-bold text-foreground">Il Percorso</h2>
+          <div className="w-8 h-[2px] bg-primary mt-3 mb-8" />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {cities.map((city, i) => (
             <motion.div
               key={city.slug}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.4, delay: (i % 2) * 0.08 }}
+              transition={{ duration: 0.4, delay: (i % 2) * 0.06 }}
             >
               <Link
                 to={`/${city.slug}`}
-                className="group block bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/30 hover:shadow-md transition-all"
+                className="group block bg-card border border-border rounded-2xl overflow-hidden active:scale-[0.98] hover:border-primary/30 hover:shadow-md transition-all"
               >
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <img
@@ -163,7 +162,7 @@ export default function Home() {
                     alt={city.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                   <div
                     className="absolute top-3 left-3 w-7 h-7 rounded-full flex items-center justify-center text-white text-[11px] font-bold border-2 border-white/80 shadow"
                     style={{ background: city.color }}
@@ -171,18 +170,18 @@ export default function Home() {
                     {city.order}
                   </div>
                   <div className="absolute bottom-3 left-4 right-4">
-                    <div className="flex items-end justify-between">
+                    <div className="flex items-end justify-between gap-2">
                       <div>
-                        <p className="font-display text-xl font-bold text-white leading-tight">{city.name}</p>
-                        <p className="font-display text-sm italic text-white/70">{city.chinese}</p>
+                        <p className="font-display text-lg font-bold text-white leading-tight">{city.name}</p>
+                        <p className="font-display text-sm italic text-white/60">{city.chinese}</p>
                       </div>
-                      <span className="font-body text-[10px] text-white/60 bg-black/30 rounded-full px-2 py-0.5">{city.dates}</span>
+                      <span className="font-body text-[10px] text-white/60 bg-black/30 rounded-full px-2 py-0.5 shrink-0">{city.dates}</span>
                     </div>
                   </div>
                 </div>
-                <div className="px-4 py-3 flex items-center justify-between gap-3">
+                <div className="px-4 py-3 flex items-center justify-between gap-2">
                   <p className="font-body text-xs text-muted-foreground leading-relaxed">{city.tagline}</p>
-                  <ArrowRight className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0" />
+                  <ArrowRight className="w-4 h-4 text-muted-foreground/30 group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0" />
                 </div>
               </Link>
             </motion.div>

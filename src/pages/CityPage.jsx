@@ -7,7 +7,7 @@ export default function CityPage({ children }) {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <main className="max-w-3xl mx-auto px-4 md:px-6 pb-12 pt-16">
+      <main className="max-w-3xl mx-auto px-4 md:px-6 pb-16 pt-20">
         {children}
       </main>
       <Footer />
