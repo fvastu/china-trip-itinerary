@@ -9,6 +9,7 @@ const UNS = "/assets/images/";
 
 const GALLERY = {
   slides: [
+    { image: BASE + "couple-shanghai.png", label: "Noi a Shanghai", caption: "Danza del leone e fuochi d'artificio sullo skyline di Shanghai!" },
     { image: UNS + "photo-1474181487882-5abf3f0ba6c2.jpg", label: "The Bund di notte", caption: "52 edifici coloniali europei di fronte alla skyline futuristica di Pudong. Pudong era terra agricola nel 1990 — in 30 anni è diventata la terza skyline più alta al mondo." },
     { image: UNS + "photo-1545893835-abaa50cbe628.jpg", label: "Skyline di Pudong", caption: "La Shanghai Tower (632 m) ha una forma a spirale che riduce del 24% la forza del vento. Il buco trapezoidale del World Financial Center fu cambiato dal cerchio originale per non sembrare il sole nascente giapponese." },
     { image: UNS + "photo-1570839170498-5a57acac0ab1.jpg", label: "Yuyuan Garden", caption: "Il ponte a 9 gomiti è costruito così perché si credeva i demoni si muovessero solo in linea retta. Costruito nel 1559 come dono per i genitori anziani." },

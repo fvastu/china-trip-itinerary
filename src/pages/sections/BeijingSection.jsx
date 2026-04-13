@@ -8,6 +8,7 @@ const UNS = "/assets/images/";
 
 const GALLERY = {
   slides: [
+    { image: BASE + "couple-beijing.png", label: "Noi a Pechino", caption: "Imperatore e imperatrice per un giorno alla Città Proibita!" },
     { image: BASE + "summer-palace.jpg", label: "Palazzo d'Estate", caption: "Tre quarti del parco è il Lago Kunming scavato artificialmente. Distrutto dai britannici nel 1860, fu ricostruito dall'imperatrice Cixi usando fondi destinati alla marina militare." },
     { image: BASE + "great-wall-mutianyu.jpg", label: "Grande Muraglia · Mutianyu", caption: "La sezione più panoramica ha 22 torri di guardia. Non è visibile dallo spazio — la leggenda fu smentita dal primo astronauta cinese Yang Liwei nel 2003." },
     { image: UNS + "photo-1584646098378-0b84fa2c0f87.jpg", label: "Città Proibita", caption: "980 edifici, ~9.000 stanze, 500 anni di storia imperiale. Il numero di figure mitologiche sui tetti indica il rango dell'edificio — il massimo è 10." },

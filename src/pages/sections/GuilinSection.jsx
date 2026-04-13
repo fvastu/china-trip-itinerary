@@ -9,6 +9,7 @@ const UNS = "/assets/images/";
 
 const GALLERY = {
   slides: [
+    { image: BASE + "couple-guilin.png", label: "Noi a Guilin", caption: "Con il drago sul fiume Li tra le montagne carsiche!" },
     { image: UNS + "photo-1536086058-51ab42a9ff76.jpg", label: "Montagne Carsiche & Fiume Li", caption: "Il paesaggio è sul retro della banconota da 20 yuan. Le torri carsiche impiegano 300 milioni di anni a formarsi — erosa verticalmente dall'acqua piovana leggermente acida." },
     { image: UNS + "photo-1593085512500-5d55148d6f0d.jpg", label: "Crociera sul Fiume Li", caption: "83 km tra specchi d'acqua e picchi. I cormorani addestrati usano un anello al collo che impedisce di inghiottire i pesci — tradizione millenaria." },
     { image: BASE + "li-river-landscape.jpg", label: "Yangshuo & Yulong River", caption: "Lo Yulong è più autentico del Li: zappe di bambù a mano, nessun motore. Yangshuo era un villaggio di pescatori fino agli anni '80." },

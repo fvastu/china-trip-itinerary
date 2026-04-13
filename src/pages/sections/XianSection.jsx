@@ -8,6 +8,7 @@ const UNS = "/assets/images/";
 
 const GALLERY = {
   slides: [
+    { image: BASE + "couple-xian.png", label: "Noi a Xi'an", caption: "Tra i fiori di ciliegio al Tempio del Cielo!" },
     { image: UNS + "photo-1591456983933-0c8a347f13a0.jpg", label: "Esercito di Terracotta · Fossa 1", caption: "Scoperto nel 1974 da contadini che scavavano un pozzo. Ogni soldato ha tratti del viso unici. Originariamente tutti dipinti a colori vivaci." },
     { image: UNS + "photo-1547981609-4b6bfe67ca0b.jpg", label: "Guerrieri di Terracotta · dettaglio", caption: "I ricercatori hanno smesso di scavare apposta, aspettando tecnologia che preservi i pigmenti. La fossa 3 è il 'quartier generale'." },
     { image: UNS + "photo-1558618666-fcd25c85cd64.jpg", label: "Mura Antiche di Xi'an", caption: "In cima alle mura sono larghe 15 metri — abbastanza per due carri affiancati. In bici ~90 minuti per il giro completo di 13.74 km." },

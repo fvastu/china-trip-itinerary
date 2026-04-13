@@ -9,6 +9,7 @@ const UNS = "/assets/images/";
 
 const GALLERY = {
   slides: [
+    { image: BASE + "couple-zhangjiajie.png", label: "Noi a Zhangjiajie", caption: "Sulla Grande Muraglia, mano nella mano!" },
     { image: UNS + "photo-1558618047-3c8c76ca7d13.jpg", label: "Pilastri Avatar · Yuanjiajie", caption: "Le colonne si sono formate 380 milioni di anni fa. James Cameron venne qui nel 2008 — la montagna più alta fu rinominata 'Avatar Hallelujah Mountain' nel 2010." },
     { image: UNS + "photo-1600716051809-e997ca4a2d9f.jpg", label: "Zhangjiajie nella nebbia", caption: "La nebbia mattutina è parte dell'esperienza: le colonne emergono dalle nuvole come isole fluttuanti. Portati un k-way leggero." },
     { image: BASE + "tianmen-cave.jpg", label: "Tianmen Cave – Porta del Paradiso", caption: "131.5 m di altezza, 57 m di larghezza — il più grande arco naturale della Cina. I 999 gradini del 'Sentiero del Paradiso' sono quasi verticali." },
