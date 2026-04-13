@@ -20,16 +20,16 @@ export default function CityHeader({ name, chinese, dates, image, description })
           <p className="font-body text-xs tracking-[0.25em] uppercase text-white/60 mb-3">
             {dates}
           </p>
-          <h2 className="font-display mb-1 text-3xl font-bold text-white sm:text-4xl md:text-6xl">
+          <h2 className="font-display mb-1 text-2xl font-bold text-white sm:text-4xl md:text-6xl">
             {name}
           </h2>
           {chinese && (
-            <p className="font-display text-lg italic text-white/70 sm:text-xl md:text-2xl">
+            <p className="font-display text-base italic text-white/70 sm:text-xl md:text-2xl">
               {chinese}
             </p>
           )}
           {description && (
-            <p className="font-body mt-3 max-w-lg text-xs leading-relaxed text-white/70 sm:mt-4 sm:text-sm">
+            <p className="font-body mt-2 max-w-lg text-xs leading-relaxed text-white/70 sm:mt-4">
               {description}
             </p>
           )}

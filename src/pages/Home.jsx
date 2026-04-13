@@ -101,10 +101,10 @@ export default function Home() {
             <p className="font-body text-xs tracking-[0.3em] uppercase text-muted-foreground mb-5">
               19 Aprile – 2 Maggio 2026
             </p>
-            <h1 className="font-display text-6xl md:text-8xl font-bold leading-none text-foreground mb-2">
+            <h1 className="font-display text-5xl sm:text-6xl md:text-8xl font-bold leading-none text-foreground mb-2">
               Cina
             </h1>
-            <p className="font-display text-2xl italic text-primary mb-6">中國</p>
+            <p className="font-display text-xl sm:text-2xl italic text-primary mb-6">中國</p>
             <div className="w-14 h-[2px] bg-primary mx-auto mb-6" />
             <p className="font-body text-sm md:text-base text-muted-foreground leading-relaxed max-w-md mx-auto">
               Da Pechino a Shanghai, attraverso antiche mura, montagne sospese nel cielo e sapori indimenticabili.
@@ -131,8 +131,8 @@ export default function Home() {
               <div className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                 <Icon className="w-4 h-4 text-primary" />
               </div>
-              <span className="font-display text-xs font-semibold text-foreground leading-tight">{label}</span>
-              <span className="font-body text-[10px] text-muted-foreground">{sub}</span>
+              <span className="font-display text-[11px] font-semibold text-foreground leading-tight text-center">{label}</span>
+              <span className="font-body text-[10px] text-muted-foreground hidden sm:block">{sub}</span>
             </Link>
           ))}
         </motion.div>

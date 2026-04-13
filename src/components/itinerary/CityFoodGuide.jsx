@@ -41,16 +41,16 @@ function SpeakButton({ chinese, reading }) {
     <button
       onClick={speak}
       title={`Pronuncia: ${reading}`}
-      className={`flex items-center gap-1.5 rounded-full border px-2.5 py-1 font-body text-[11px] transition-all ${
+      className={`flex items-center gap-1 rounded-full border px-2 py-1 font-body text-[11px] transition-all max-w-full ${
         speaking
           ? "border-primary/40 bg-primary/10 text-primary"
           : "border-border bg-background text-muted-foreground hover:border-primary/40 hover:text-primary"
       }`}
     >
       {speaking
-        ? <Loader className="h-3 w-3 animate-spin" />
-        : <Volume2 className="h-3 w-3" />}
-      <span>{speaking ? "..." : reading}</span>
+        ? <Loader className="h-3 w-3 animate-spin shrink-0" />
+        : <Volume2 className="h-3 w-3 shrink-0" />}
+      <span className="truncate">{speaking ? "..." : reading}</span>
     </button>
   );
 }

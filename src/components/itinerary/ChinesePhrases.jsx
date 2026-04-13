@@ -160,12 +160,12 @@ function PhraseRow({ phrase, index }) {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-20px" }}
       transition={{ duration: 0.3, delay: index * 0.03 }}
-      className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3"
+      className="flex items-center gap-3 rounded-xl border border-border bg-card px-3 py-3"
     >
       <div className="flex-1 min-w-0">
-        <p className="font-body text-xs text-muted-foreground mb-0.5">{phrase.it}</p>
-        <p className="font-display text-base font-semibold text-foreground leading-tight">{phrase.zh}</p>
-        <p className="font-body text-[11px] text-primary mt-0.5 italic">{phrase.pinyin}</p>
+        <p className="font-body text-[11px] text-muted-foreground mb-0.5 leading-tight">{phrase.it}</p>
+        <p className="font-display text-sm font-semibold text-foreground leading-tight">{phrase.zh}</p>
+        <p className="font-body text-[11px] text-primary mt-0.5 italic truncate">{phrase.pinyin}</p>
       </div>
       <SpeakButton zh={phrase.zh} pinyin={phrase.pinyin} />
     </motion.div>
@@ -193,7 +193,7 @@ export default function ChinesePhrases() {
       </motion.div>
 
       {/* Category tabs */}
-      <div className="flex gap-2 overflow-x-auto pb-2 mb-6 -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap md:justify-center scrollbar-hide">
+      <div className="flex gap-2 overflow-x-auto pb-2 mb-6 -mx-4 px-4 scrollbar-hide">
         {categories.map((cat, i) => (
           <button
             key={i}

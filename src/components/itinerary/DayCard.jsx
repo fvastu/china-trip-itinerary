@@ -39,7 +39,7 @@ export default function DayCard({ day, date, title, items }) {
       </div>
 
       {/* Timeline items */}
-      <div className="ml-2 md:ml-4 border-l-2 border-border pl-6 md:pl-8 space-y-4">
+      <div className="ml-1 border-l-2 border-border pl-4 md:pl-8 space-y-4">
         {items.map((item, idx) => {
           const Icon = iconMap[item.icon] || MapPin;
           return (
@@ -47,7 +47,7 @@ export default function DayCard({ day, date, title, items }) {
               key={idx}
               className={`relative pb-2 ${
                 item.highlight
-                  ? "bg-accent/50 -ml-6 md:-ml-8 pl-6 md:pl-8 pr-4 py-3 rounded-r-lg border-l-2 border-primary"
+                  ? "bg-accent/50 -ml-4 md:-ml-8 pl-4 md:pl-8 pr-3 py-3 rounded-r-lg border-l-2 border-primary"
                   : ""
               }`}
             >
@@ -55,8 +55,8 @@ export default function DayCard({ day, date, title, items }) {
               <div
                 className={`absolute top-1 w-2.5 h-2.5 rounded-full border-2 ${
                   item.highlight
-                    ? "bg-primary border-primary -left-[calc(1.5rem+7px)] md:-left-[calc(2rem+7px)]"
-                    : "bg-background border-muted-foreground/30 -left-[calc(1.5rem+5px)] md:-left-[calc(2rem+5px)]"
+                    ? "bg-primary border-primary -left-[calc(1rem+7px)] md:-left-[calc(2rem+7px)]"
+                    : "bg-background border-muted-foreground/30 -left-[calc(1rem+5px)] md:-left-[calc(2rem+5px)]"
                 }`}
               />
 
