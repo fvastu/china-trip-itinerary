@@ -16,6 +16,7 @@ import ShanghaiPage from './pages/ShanghaiPage';
 import MapPage from './pages/MapPage';
 import FoodPage from './pages/FoodPage';
 import NotesPage from './pages/NotesPage';
+import PhrasesPage from './pages/PhrasesPage';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -54,6 +55,7 @@ const AuthenticatedApp = () => {
       <Route path="/mappa" element={<MapPage />} />
       <Route path="/cibo" element={<FoodPage />} />
       <Route path="/note" element={<NotesPage />} />
+      <Route path="/frasi" element={<PhrasesPage />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

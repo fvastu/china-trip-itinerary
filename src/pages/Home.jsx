@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, Utensils, FileText } from "lucide-react";
+import { ArrowRight, MapPin, Utensils, FileText, MessageCircle } from "lucide-react";
 import Navbar from "../components/itinerary/Navbar";
 import Footer from "../components/itinerary/Footer";
 
@@ -80,6 +80,7 @@ const cities = [
 const quickLinks = [
   { to: "/mappa", icon: MapPin, label: "Mappa del Percorso", sub: "7 città · 14 giorni" },
   { to: "/cibo", icon: Utensils, label: "Guida al Cibo", sub: "Piatti da non perdere" },
+  { to: "/frasi", icon: MessageCircle, label: "Frasi Utili", sub: "Con audio in cinese" },
   { to: "/note", icon: FileText, label: "Note Pratiche", sub: "App, trasporti, consigli" },
 ];
 
@@ -119,7 +120,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="grid grid-cols-3 gap-3 mb-16"
+          className="grid grid-cols-2 gap-3 mb-16 sm:grid-cols-4"
         >
           {quickLinks.map(({ to, icon: Icon, label, sub }) => (
             <Link

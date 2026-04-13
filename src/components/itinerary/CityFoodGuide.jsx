@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Candy, Soup, UtensilsCrossed } from "lucide-react";
+import { Candy, Soup, UtensilsCrossed, Volume2, Loader } from "lucide-react";
 
 const iconMap = {
   piatto: UtensilsCrossed,
@@ -12,6 +13,47 @@ const typeLabel = {
   dolce: "Dolce",
   sfizio: "Sfizio",
 };
+
+function SpeakButton({ chinese, reading }) {
+  const [speaking, setSpeaking] = useState(false);
+
+  const speak = () => {
+    if (!window.speechSynthesis || speaking) return;
+    window.speechSynthesis.cancel();
+
+    const utter = new SpeechSynthesisUtterance(chinese);
+    utter.lang = "zh-CN";
+    utter.rate = 0.85;
+
+    // prefer a Chinese voice if available
+    const voices = window.speechSynthesis.getVoices();
+    const zhVoice = voices.find(v => v.lang.startsWith("zh"));
+    if (zhVoice) utter.voice = zhVoice;
+
+    utter.onstart = () => setSpeaking(true);
+    utter.onend = () => setSpeaking(false);
+    utter.onerror = () => setSpeaking(false);
+
+    window.speechSynthesis.speak(utter);
+  };
+
+  return (
+    <button
+      onClick={speak}
+      title={`Pronuncia: ${reading}`}
+      className={`flex items-center gap-1.5 rounded-full border px-2.5 py-1 font-body text-[11px] transition-all ${
+        speaking
+          ? "border-primary/40 bg-primary/10 text-primary"
+          : "border-border bg-background text-muted-foreground hover:border-primary/40 hover:text-primary"
+      }`}
+    >
+      {speaking
+        ? <Loader className="h-3 w-3 animate-spin" />
+        : <Volume2 className="h-3 w-3" />}
+      <span>{speaking ? "..." : reading}</span>
+    </button>
+  );
+}
 
 function FoodItem({ item, index }) {
   const Icon = iconMap[item.type] || UtensilsCrossed;
@@ -46,10 +88,8 @@ function FoodItem({ item, index }) {
         </div>
 
         <h4 className="font-display text-lg font-semibold text-foreground">{item.name}</h4>
-        <p className="mt-1 font-body text-xs italic text-muted-foreground">
-          Si legge: {item.reading}
-        </p>
-        <p className="font-body text-sm text-primary">{item.chinese}</p>
+        <p className="font-body text-sm text-primary mb-2">{item.chinese}</p>
+        <SpeakButton chinese={item.chinese} reading={item.reading} />
         <p className="mt-3 font-body text-sm leading-relaxed text-muted-foreground">{item.description}</p>
       </div>
     </motion.article>
