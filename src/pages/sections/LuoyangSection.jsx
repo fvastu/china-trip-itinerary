@@ -2,6 +2,8 @@ import CityHeader from "../../components/itinerary/CityHeader";
 import DayCard from "../../components/itinerary/DayCard";
 import HotelCard from "../../components/itinerary/HotelCard";
 import CityGallery from "../../components/itinerary/CityGallery";
+import CityFoodGuide from "../../components/itinerary/CityFoodGuide";
+import { cityFoodGuides } from "../../components/itinerary/cityFoodGuides";
 
 const BASE = "/assets/images/";
 const UNS = "/assets/images/";
@@ -51,6 +53,10 @@ export default function LuoyangSection({ imgs = {} }) {
         description="L'antica capitale dalle mille grotte: i capolavori buddhisti di Longmen e il fascino autentico della Old Town."
       />
       <CityGallery slides={GALLERY.slides} food={GALLERY.food} />
+      <CityFoodGuide
+        subtitle="A Luoyang conviene puntare su cucina storica Tang, zuppe eleganti e qualche snack regionale meno famoso ma molto locale."
+        items={cityFoodGuides.luoyang}
+      />
       <div className="mt-10 space-y-12">
         <HotelCard
           name="Lavande Hotel (Luoyi Ancient City)"

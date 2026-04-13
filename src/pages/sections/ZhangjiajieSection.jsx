@@ -3,6 +3,8 @@ import DayCard from "../../components/itinerary/DayCard";
 import HotelCard from "../../components/itinerary/HotelCard";
 import TransportNote from "../../components/itinerary/TransportNote";
 import CityGallery from "../../components/itinerary/CityGallery";
+import CityFoodGuide from "../../components/itinerary/CityFoodGuide";
+import { cityFoodGuides } from "../../components/itinerary/cityFoodGuides";
 
 const BASE = "/assets/images/";
 const UNS = "/assets/images/";
@@ -80,6 +82,10 @@ export default function ZhangjiajieSection({ imgs = {} }) {
         description="Le montagne sospese di Avatar, la Porta del Paradiso e il villaggio incantato di Furong."
       />
       <CityGallery slides={GALLERY.slides} food={GALLERY.food} />
+      <CityFoodGuide
+        subtitle="Tra cucina Tujia e snack di montagna ci sono meno classici internazionali, ma diversi assaggi molto tipici e memorabili."
+        items={cityFoodGuides.zhangjiajie}
+      />
       <div className="mt-10 space-y-12">
         <HotelCard
           name="Sky Retreat Hotel 嘉宁酒店"

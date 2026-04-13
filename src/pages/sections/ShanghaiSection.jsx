@@ -3,6 +3,8 @@ import DayCard from "../../components/itinerary/DayCard";
 import HotelCard from "../../components/itinerary/HotelCard";
 import TransportNote from "../../components/itinerary/TransportNote";
 import CityGallery from "../../components/itinerary/CityGallery";
+import CityFoodGuide from "../../components/itinerary/CityFoodGuide";
+import { cityFoodGuides } from "../../components/itinerary/cityFoodGuides";
 
 const BASE = "/assets/images/";
 const UNS = "/assets/images/";
@@ -85,6 +87,10 @@ export default function ShanghaiSection({ imgs = {} }) {
         description="La metropoli del futuro: skyline futuristici, la French Concession, lo Yuyuan Garden e xiaolongbao perfetti."
       />
       <CityGallery slides={GALLERY.slides} food={GALLERY.food} />
+      <CityFoodGuide
+        subtitle="Shanghai è perfetta per ravioli succosi, comfort food raffinato e qualche dolce stagionale molto cittadino."
+        items={cityFoodGuides.shanghai}
+      />
       <div className="mt-10 space-y-12">
         <HotelCard
           name="Tianhua Hotel (People's Square)"

@@ -2,6 +2,8 @@ import CityHeader from "../../components/itinerary/CityHeader";
 import DayCard from "../../components/itinerary/DayCard";
 import HotelCard from "../../components/itinerary/HotelCard";
 import CityGallery from "../../components/itinerary/CityGallery";
+import CityFoodGuide from "../../components/itinerary/CityFoodGuide";
+import { cityFoodGuides } from "../../components/itinerary/cityFoodGuides";
 
 const BASE = "/assets/images/";
 const UNS = "/assets/images/";
@@ -77,6 +79,10 @@ export default function ChengduSection({ imgs = {} }) {
         description="La capitale del Sichuan: panda giganti, hotpot infuocato, teahouse tradizionali e ritmo di vita rilassato."
       />
       <CityGallery slides={GALLERY.slides} food={GALLERY.food} />
+      <CityFoodGuide
+        subtitle="Qui il filo conduttore è il gusto mala: piccante, profumato e leggermente anestetizzante, con tanti assaggi da street food."
+        items={cityFoodGuides.chengdu}
+      />
       <div className="mt-10 space-y-12">
         <HotelCard
           name="NICESOE S Hotel (Kuanzhai Alley)"

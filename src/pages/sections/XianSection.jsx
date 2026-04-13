@@ -2,6 +2,8 @@ import CityHeader from "../../components/itinerary/CityHeader";
 import DayCard from "../../components/itinerary/DayCard";
 import HotelCard from "../../components/itinerary/HotelCard";
 import CityGallery from "../../components/itinerary/CityGallery";
+import CityFoodGuide from "../../components/itinerary/CityFoodGuide";
+import { cityFoodGuides } from "../../components/itinerary/cityFoodGuides";
 
 const BASE = "/assets/images/";
 const UNS = "/assets/images/";
@@ -75,6 +77,10 @@ export default function XianSection({ imgs = {} }) {
         description="L'Esercito di Terracotta, le mura antiche in bicicletta, la Grande Moschea e la Dayan Pagoda."
       />
       <CityGallery slides={GALLERY.slides} food={GALLERY.food} />
+      <CityFoodGuide
+        subtitle="Xi'an è perfetta per alternare piatti robusti della Via della Seta e street food halal nei vicoli del quartiere musulmano."
+        items={cityFoodGuides.xian}
+      />
       <div className="mt-10 space-y-12">
         <HotelCard
           name="Xingbo Hotel (Bell Tower · Yongningmen)"

@@ -2,6 +2,8 @@ import CityHeader from "../../components/itinerary/CityHeader";
 import DayCard from "../../components/itinerary/DayCard";
 import HotelCard from "../../components/itinerary/HotelCard";
 import CityGallery from "../../components/itinerary/CityGallery";
+import CityFoodGuide from "../../components/itinerary/CityFoodGuide";
+import { cityFoodGuides } from "../../components/itinerary/cityFoodGuides";
 
 const BASE = "/assets/images/";
 const UNS = "/assets/images/";
@@ -77,6 +79,10 @@ export default function BeijingSection({ imgs = {} }) {
         description="La capitale imperiale: dalla maestosità della Città Proibita agli hutong nascosti, dalla Grande Muraglia all'anatra laccata."
       />
       <CityGallery slides={GALLERY.slides} food={GALLERY.food} />
+      <CityFoodGuide
+        subtitle="Piatti simbolo, dolci e sfizi da tenere d'occhio tra hutong, mercati e ristoranti storici."
+        items={cityFoodGuides.beijing}
+      />
       <div className="mt-10 space-y-12">
         <HotelCard
           name="Homeinn Selected Hotel"

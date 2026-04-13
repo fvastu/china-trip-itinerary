@@ -3,6 +3,8 @@ import DayCard from "../../components/itinerary/DayCard";
 import HotelCard from "../../components/itinerary/HotelCard";
 import TransportNote from "../../components/itinerary/TransportNote";
 import CityGallery from "../../components/itinerary/CityGallery";
+import CityFoodGuide from "../../components/itinerary/CityFoodGuide";
+import { cityFoodGuides } from "../../components/itinerary/cityFoodGuides";
 
 const BASE = "/assets/images/";
 const UNS = "/assets/images/";
@@ -66,6 +68,10 @@ export default function GuilinSection({ imgs = {} }) {
         description="Paesaggi da cartolina: montagne carsiche, il fiume Li, e-bike lungo lo Yulong e la magia di Yangshuo."
       />
       <CityGallery slides={GALLERY.slides} food={GALLERY.food} />
+      <CityFoodGuide
+        subtitle="A Guilin e Yangshuo vale la pena mischiare il grande classico dei noodles con piatti di fiume, bevande locali e dolci freschi."
+        items={cityFoodGuides.guilin}
+      />
       <div className="mt-10 space-y-12">
         <HotelCard
           name="Xiangbishan Port House – City Core Hotel"
