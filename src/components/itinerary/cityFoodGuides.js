@@ -39,6 +39,7 @@ export const cityFoodGuides = {
       name: "Involtini Lüdagun",
       reading: "Lǘdǎgǔn",
       chinese: "驴打滚",
+      image: F + "lvdagun.jpg",
       description: "Rotolini morbidi di riso glutinoso ripieni di crema di fagioli rossi, rotolati nella farina di soia tostata. Nome buffo: 'asino che rotola nella polvere'."
     },
     {
@@ -64,6 +65,7 @@ export const cityFoodGuides = {
       name: "Banchetto dell'Acqua",
       reading: "Shuǐxí",
       chinese: "水席",
+      image: F + "luoyang-food1.jpg",
       description: "Sequenza cerimoniale di 24 portate tutte in brodo o salsa, servite una dopo l'altra come acqua che scorre. Specialità storica millenaria di Luoyang."
     },
     {
@@ -71,6 +73,7 @@ export const cityFoodGuides = {
       name: "Zuppa della Peonia",
       reading: "Mǔdān yàncài",
       chinese: "牡丹燕菜",
+      image: F + "luoyang-food2.jpg",
       description: "Piatto simbolo della città: zuppa elegante con ravanello tagliato finissimo che ricorda il nido di rondine, spesso decorata a forma di peonia."
     },
     {
@@ -86,6 +89,7 @@ export const cityFoodGuides = {
       name: "Torta di Peonia",
       reading: "Mǔdān bǐng",
       chinese: "牡丹饼",
+      image: F + "peony-cake.jpg",
       description: "Dolce secco e friabile ispirato al fiore simbolo di Luoyang, con ripieno delicato a base di semi, fagioli rossi o petali di peonia."
     }
   ],
@@ -111,6 +115,7 @@ export const cityFoodGuides = {
       name: "Pane nel brodo di agnello",
       reading: "Yángròu pàomó",
       chinese: "羊肉泡馍",
+      image: F + "yangrou-paomo.jpg",
       description: "Zuppa di montone: tu spezzi il pane a mano nella ciotola, poi il cuoco ci versa sopra il brodo ricco e profumato. Un rituale."
     },
     {
@@ -126,6 +131,7 @@ export const cityFoodGuides = {
       name: "Spiedini del Quartiere Musulmano",
       reading: "Kǎo ròu chuàn",
       chinese: "烤肉串",
+      image: F + "lamb-skewers.jpg",
       description: "Spiedini di agnello speziati con cumino e peperoncino, cotti alla brace nei vicoli pieni di fumo e profumi del quartiere Hui."
     },
     {
@@ -167,6 +173,7 @@ export const cityFoodGuides = {
       name: "Chuanchuanxiang",
       reading: "Chuànchuànxiāng",
       chinese: "串串香",
+      image: F + "chuanchuanxiang.jpg",
       description: "Spiedini di ogni cosa (carne, verdure, funghi) immersi in un pentolone di brodo speziato. Lo street food hotpot: scegli gli spiedini e paghi a peso."
     },
     {
@@ -182,6 +189,7 @@ export const cityFoodGuides = {
       name: "Bingfen",
       reading: "Bīngfěn",
       chinese: "冰粉",
+      image: F + "bingfen.jpg",
       description: "Gelatina trasparente servita con sciroppo di zucchero bruno, semi di sesamo, arachidi e frutta. Il dessert rinfrescante dopo l'hotpot."
     },
     {
@@ -189,6 +197,7 @@ export const cityFoodGuides = {
       name: "Coniglio piccante",
       reading: "Lěng chī tù",
       chinese: "冷吃兔",
+      image: F + "cold-rabbit.jpg",
       description: "Bocconcini di coniglio saltati con peperoncino secco e spezie, da sgranocchiare come snack salato molto locale."
     }
   ],
@@ -214,6 +223,7 @@ export const cityFoodGuides = {
       name: "Tofu di riso di Furong",
       reading: "Mǐ dòufu",
       chinese: "米豆腐",
+      image: F + "bingfen.jpg",
       description: "Preparazione fresca e morbida a base di riso, tagliata a cubetti e servita con salsa piccante, acida e profumata."
     },
     {
@@ -221,6 +231,7 @@ export const cityFoodGuides = {
       name: "Ciba",
       reading: "Cíbā",
       chinese: "糍粑",
+      image: F + "ciba.jpg",
       description: "Riso glutinoso pestato nel mortaio fino a diventare una pasta elastica, poi fritto o grigliato e cosparso di zucchero e farina di soia. Rustico e buonissimo."
     }
   ],
@@ -238,6 +249,7 @@ export const cityFoodGuides = {
       name: "Anatra alla birra di Yangshuo",
       reading: "Píjiǔ yā",
       chinese: "啤酒鸭",
+      image: F + "beer-fish.jpg",
       description: "Anatra stufata con birra locale, peperoni e spezie fino a diventare tenera e saporita. Specialità di Yangshuo, da provare lungo West Street."
     },
     {
@@ -245,6 +257,7 @@ export const cityFoodGuides = {
       name: "Tè all'olio del Guangxi",
       reading: "Yóuchá",
       chinese: "油茶",
+      image: F + "oil-tea.jpg",
       description: "Bevanda salata e tostata delle minoranze locali, preparata con tè pestato e arricchita con riso soffiato, arachidi e cipollotto. Sembra strano ma è comfort food puro."
     },
     {

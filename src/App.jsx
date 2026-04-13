@@ -6,6 +6,16 @@ import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import Home from './pages/Home';
+import PecinoPage from './pages/PecinoPage';
+import LuoyangPage from './pages/LuoyangPage';
+import XianPage from './pages/XianPage';
+import ChengduPage from './pages/ChengduPage';
+import ZhangjiajePage from './pages/ZhangjiajePage';
+import GuilinPage from './pages/GuilinPage';
+import ShanghaiPage from './pages/ShanghaiPage';
+import MapPage from './pages/MapPage';
+import FoodPage from './pages/FoodPage';
+import NotesPage from './pages/NotesPage';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -34,6 +44,16 @@ const AuthenticatedApp = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/pechino" element={<PecinoPage />} />
+      <Route path="/luoyang" element={<LuoyangPage />} />
+      <Route path="/xian" element={<XianPage />} />
+      <Route path="/chengdu" element={<ChengduPage />} />
+      <Route path="/zhangjiajie" element={<ZhangjiajePage />} />
+      <Route path="/guilin" element={<GuilinPage />} />
+      <Route path="/shanghai" element={<ShanghaiPage />} />
+      <Route path="/mappa" element={<MapPage />} />
+      <Route path="/cibo" element={<FoodPage />} />
+      <Route path="/note" element={<NotesPage />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
