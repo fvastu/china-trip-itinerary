@@ -14,8 +14,8 @@ const GALLERY = {
     { image: BASE + "couple-shanghai.png", label: "Noi a Shanghai", caption: "Danza del leone e fuochi d'artificio sullo skyline di Shanghai!" },
     { image: UNS + "photo-1474181487882-5abf3f0ba6c2.jpg", label: "The Bund di notte", caption: "52 edifici coloniali europei di fronte alla skyline futuristica di Pudong. Pudong era terra agricola nel 1990 — in 30 anni è diventata la terza skyline più alta al mondo." },
     { image: UNS + "photo-1545893835-abaa50cbe628.jpg", label: "Skyline di Pudong", caption: "La Shanghai Tower (632 m) ha una forma a spirale che riduce del 24% la forza del vento. Il buco trapezoidale del World Financial Center fu cambiato dal cerchio originale per non sembrare il sole nascente giapponese." },
-    { image: UNS + "photo-1570839170498-5a57acac0ab1.jpg", label: "Yuyuan Garden", caption: "Il ponte a 9 gomiti è costruito così perché si credeva i demoni si muovessero solo in linea retta. Costruito nel 1559 come dono per i genitori anziani." },
-    { image: UNS + "photo-1570839170498-5a57acac0ab1.jpg", label: "French Concession", caption: "Sotto controllo francese dal 1849 al 1943. Qui il giovane Mao fondò il Partito Comunista nel 1921 in un appartamento anonimo di Xintiandi." },
+    { image: BASE + "yuyuan-garden.jpg", label: "Yuyuan Garden", caption: "Il ponte a 9 gomiti è costruito così perché si credeva i demoni si muovessero solo in linea retta. Costruito nel 1559 come dono per i genitori anziani." },
+    { image: BASE + "french-concession.jpg", label: "French Concession", caption: "Sotto controllo francese dal 1849 al 1943. Qui il giovane Mao fondò il Partito Comunista nel 1921 in un appartamento anonimo di Xintiandi." },
   ],
   food: {
     image: BASE + "xiaolongbao.jpg",
@@ -42,7 +42,7 @@ const A = {
   yuyuan: {
     name: "Yuyuan Garden 豫园",
     history: "Costruito tra il 1559 e il 1577 dal funzionario Ming Pan Yunduan come dono per i suoi genitori anziani — 18 anni di lavori per 2 ettari di giardino classico cinese. Il principio organizzativo è quello del 'giardino come paesaggio in miniatura': laghi, padiglioni, rocce artificiali (tai hu stones), corridoi coperti e muri a drago. Il ponte a 9 gomiti è costruito ad angoli bruschi perché si credeva i demoni si muovessero solo in linea retta — la svolta li disorientava. Adiacente c'è il City God Temple (城隍庙) del 1403, centro spirituale dell'Old Town. Tutto il distretto attorno è uno dei mercati di street food più densi di Shanghai.",
-    photos: [{ image: UNS + "photo-1570839170498-5a57acac0ab1.jpg", caption: "Il ponte a 9 gomiti e il padiglione sul lago dello Yuyuan" }],
+    photos: [{ image: BASE + "yuyuan-garden.jpg", caption: "Il ponte a 9 gomiti e il padiglione sul lago dello Yuyuan" }],
   },
   jiaJia: {
     name: "Jia Jia Tang Bao 佳家汤包",
@@ -52,12 +52,12 @@ const A = {
   frenchConcession: {
     name: "French Concession & Wukang Road 法租界",
     history: "La Concessione Francese era sotto controllo francese dal 1849 al 1943, quando fu restituita alla Cina durante la Seconda Guerra Mondiale. Era la zona più elegante di Shanghai coloniale — ville, café, negozi di lusso, il Lyceum Theatre. I platani che allineano le strade furono importati dalla Francia per evocare Parigi. Wukang Road (武康路), con la sua curvatura elegante e le ville Liberty, è la via più fotografata di Shanghai. Xintiandi (新天地) fu ristrutturato negli anni 2000 mantenendo i shikumen (石库门, case con portoni di pietra) originali — nel numero 76 di Xingye Road, Mao Zedong e 12 delegati fondarono il PCC nel luglio 1921.",
-    photos: [{ image: UNS + "photo-1570839170498-5a57acac0ab1.jpg", caption: "Wukang Road — villa Normandie e i platani francesi" }],
+    photos: [{ image: BASE + "french-concession.jpg", caption: "Wukang Road — villa Normandie e i platani francesi" }],
   },
   tianzifang: {
     name: "Tianzifang 田子坊",
     history: "Tianzifang è un labirinto di vicoli (longtang, 弄堂) nel cuore della ex Concessione Francese, trasformati a partire dal 2000 in un distretto creativo con gallerie d'arte, boutique di design, bar e ateliers. I vicoli shikumen originali degli anni '30 sono stati preservati — le case in mattone grigio con portoni in pietra sono il simbolo dell'architettura residenziale shanghaiana. Niente in comune con i centri commerciali: qui le botteghe sono a misura d'uomo, in spazi di 20 m², gestite da artigiani e designer indipendenti. È l'opposto del lusso di Taikoo Li — autenticità creativa in piccoli spazi.",
-    photos: [{ image: UNS + "photo-1570839170498-5a57acac0ab1.jpg", caption: "I vicoli di Tianzifang — il quartiere creativo della French Concession" }],
+    photos: [{ image: BASE + "french-concession.jpg", caption: "I vicoli di Tianzifang — il quartiere creativo della French Concession" }],
   },
   thousandTrees: {
     name: "1000 Trees 千树",
@@ -72,7 +72,7 @@ const A = {
   m50: {
     name: "M50 Art District 莫干山路50号",
     history: "M50 è un distretto artistico nel complesso di fabbriche tessili degli anni '30 lungo il Suzhou Creek, a Moganshan Road. Negli anni '90 i capannoni abbandonati furono occupati da artisti e gallerie che ne fecero il centro dell'arte contemporanea shanghaiana — simile al 798 di Pechino ma più autentico e meno commerciale. Oggi ospita oltre 100 gallerie e studi d'artista: arte contemporanea cinese, fotografia, installazioni, street art sui muri esterni. La street art sulle pareti esterne degli edifici vale già da sola la visita. L'ingresso è libero — le gallerie singole sono gratuite o con piccolo biglietto.",
-    photos: [{ image: UNS + "photo-1570839170498-5a57acac0ab1.jpg", caption: "M50 Art District — ex fabbriche trasformate in gallerie d'arte" }],
+    photos: [{ image: BASE + "the-bund-night.jpg", caption: "M50 Art District — ex fabbriche trasformate in gallerie d'arte" }],
   },
 };
 

@@ -216,12 +216,12 @@ const cities = [
         caption: "La Shanghai Tower (632 m, seconda al mondo) ha una forma a spirale che riduce del 24% la forza del vento sulle facciate. Il World Financial Center accanto ha il famoso 'buco' trapezoidale in cima — originariamente progettato come cerchio, fu cambiato per non sembrare il sole nascente giapponese.",
       },
       {
-        image: UNS + "photo-1570839170498-5a57acac0ab1.jpg",
+        image: BASE + "yuyuan-garden.jpg",
         label: "Yuyuan Garden",
         caption: "Il ponte a 9 gomiti sul laghetto è costruito così per ragioni apotropaiche: si credeva che i demoni potessero muoversi solo in linea retta, e i bruschi cambi di direzione li disorientassero. Costruito nel 1559 come dono per i genitori anziani.",
       },
       {
-        image: UNS + "photo-1570839170498-5a57acac0ab1.jpg",
+        image: BASE + "french-concession.jpg",
         label: "French Concession",
         caption: "Sotto controllo francese dal 1849 al 1943. Qui il giovane Mao Zedong fondò il Partito Comunista nel 1921, in un appartamento anonimo di Xintiandi. Wukang Road coi suoi platani e le ville liberty è la strada più fotografata di Shanghai.",
       },
