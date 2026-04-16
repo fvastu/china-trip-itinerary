@@ -142,6 +142,8 @@ export default function BeijingSection({ imgs = {} }) {
             { time: "16:00", icon: "transport", title: "Recupero bagagli + taxi verso stazione" },
             { time: "17:55", icon: "transport", title: "Treno Beijing West → Luoyang Longmen", highlight: true,
               description: "Arrivo 20:54. La stazione Longmen è a ~10 km dal centro. Taxi/Didi 20–25 min, ~3–5€." },
+            { icon: "tip", title: "Gite alternative se c'è tempo",
+              description: "Lago Houhai + bar sul canale (30 min a piedi da Drum Tower, ottimo per tramonto). Tempio di Confucio & Accademia Imperiale Guozijian (10–15 min a piedi da Nanluoguxiang, tranquillo e fotogenico)." },
           ]}
         />
       </div>

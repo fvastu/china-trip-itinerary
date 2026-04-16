@@ -69,6 +69,31 @@ const A = {
     history: "Il Tempio di Jing'an (静安寺, 'Tempio della Tranquillità Serena') fu fondato nel III sec. d.C. sul fiume Suzhou, poi spostato nell'attuale posizione nel 1216. È uno dei templi buddisti più importanti di Shanghai e uno dei più frequentati: oltre 500.000 visitatori l'anno. La sua caratteristica più sorprendente è il contrasto: circondato da grattacieli e centro commerciale luxury, con i suoi tetti dorati e le strutture in bronzo massiccio. Il tempio è stato completamente ristrutturato in oro e rame nel 2010 — il costo fu di 400 milioni di yuan. Entrare subito alle 7:30 per trovarlo tranquillo, prima che arrivi il flusso dei turisti.",
     photos: [{ image: UNS + "photo-1474181487882-5abf3f0ba6c2.jpg", caption: "Il Jing'an Temple circondato dai grattacieli moderni" }],
   },
+  deMarzo: {
+    name: "13 De Marzo · Anfu Road 安福路322号",
+    history: "13 De Marzo è un brand di moda cinese fondato nel 2019, diventato famoso per i suoi negozi-caffetteria a tema orsacchiotto che sono tra i più instagrammati di Shanghai. Il flagship di Anfu Road 322 è un concept store dove moda, arte e gastronomia si fondono: cornetti giganti, drink creativi e un'estetica cozy che mescola il lusso europeo con il kawaii asiatico. Anfu Road (安福路) stessa è una delle vie più affascinanti della French Concession: 900 metri di platani, boutique indipendenti, caffetterie di specialty coffee e gallerie d'arte nascoste. Negli ultimi anni è diventata la via preferita dai giovani creativi di Shanghai — meno turistica di Wukang Road ma altrettanto fotogenica.",
+    photos: [{ image: BASE + "french-concession.jpg", caption: "Anfu Road nella French Concession — platani e caffetterie di design" }],
+  },
+  nudake: {
+    name: "Nudake Haus Cafe",
+    history: "Nudake è un brand di pasticceria artistica cinese che ha rivoluzionato il concetto di bakery in Cina. Il flagship 'Haus Nowhere' di Shanghai è famoso per i suoi cornetti giganti esposti come opere d'arte in vetrine minimaliste e per gli interni che mescolano brutalismo industriale e design scandinavo. I dolci non sono solo buoni — sono progettati per essere fotografati: forme geometriche impossibili, colori naturali e texture contrastanti. Il brand è nato a Shenzhen nel 2020 e si è espanso rapidamente nelle città tier-1 cinesi. È rappresentativo della nuova generazione di brand F&B cinesi che competono con l'estetica europea mantenendo un'identità locale.",
+    photos: [{ image: BASE + "french-concession.jpg", caption: "Il design minimalista di Nudake Haus — dolci come opere d'arte" }],
+  },
+  nanjingRoad: {
+    name: "Nanjing Road 南京路步行街",
+    history: "Nanjing Road (南京路) è la via commerciale più famosa di Shanghai e una delle più trafficate al mondo: 5.5 km dal Bund fino a Jing'an Temple, di cui l'ultimo tratto è completamente pedonale. Fu la prima strada asfaltata di Shanghai (1908) e durante l'era coloniale era il cuore dello shopping internazionale — i primi grandi magazzini della Cina aprirono qui negli anni '20. Il tratto pedonale (南京路步行街) è lungo 1.2 km ed è percorso da trenini elettrici per i turisti stanchi. Di sera le insegne al neon la trasformano in un fiume di luce. Nonostante sia molto turistica, resta un'esperienza imperdibile per l'energia e il contrasto tra i vecchi edifici Art Déco e i moderni centri commerciali.",
+    photos: [{ image: UNS + "photo-1474181487882-5abf3f0ba6c2.jpg", caption: "Nanjing Road di sera — il fiume di neon verso il Bund" }],
+  },
+  xintiandi: {
+    name: "Xintiandi 新天地",
+    history: "Xintiandi (新天地, 'nuovo cielo e terra') è un quartiere di shikumen restaurati nel cuore di Shanghai. Gli shikumen (石库门, 'portoni di pietra') sono l'architettura residenziale tipica di Shanghai degli anni '20-'30: case a schiera in mattone grigio con portali in pietra che fondono elementi cinesi e occidentali. Il quartiere fu ristrutturato negli anni 2000 dall'architetto americano Benjamin Wood, trasformando le case fatiscenti in ristoranti, bar e boutique eleganti mantenendo le facciate originali. Al numero 76 di Xingye Road, all'interno di Xintiandi, Mao Zedong e 12 delegati fondarono il Partito Comunista Cinese nel luglio 1921 — oggi è un museo visitabile. Perfetta per una cena serale o una passeggiata dopo il tramonto.",
+    photos: [{ image: BASE + "french-concession.jpg", caption: "I vicoli shikumen restaurati di Xintiandi — eleganza storica" }],
+  },
+  traghetto: {
+    name: "Traghetto Huangpu 黄浦江渡轮",
+    history: "Il traghetto dello Huangpu River (黄浦江渡轮) è il modo più economico e autentico per attraversare il fiume tra il Bund e Lujiazui: 2 CNY (circa 0.25€) per 5 minuti di traversata, contro i 100-200 CNY delle crociere turistiche. Il servizio esiste dagli anni '30 ed era l'unico collegamento tra le due sponde prima della costruzione dei tunnel e della metro. Oggi i traghetti sono moderni e climatizzati, partono ogni 10 minuti dal Bund Terminal fino alle 22:30. La vista dalla prua — con la skyline illuminata di Pudong che si avvicina o il Bund coloniale che si allontana — è uno dei momenti più belli e meno turistici di Shanghai. Un segreto che i locali conoscono bene.",
+    photos: [{ image: UNS + "photo-1545893835-abaa50cbe628.jpg", caption: "La skyline di Pudong vista dal traghetto — 2 CNY per questa vista" }],
+  },
   m50: {
     name: "M50 Art District 莫干山路50号",
     history: "M50 è un distretto artistico nel complesso di fabbriche tessili degli anni '30 lungo il Suzhou Creek, a Moganshan Road. Negli anni '90 i capannoni abbandonati furono occupati da artisti e gallerie che ne fecero il centro dell'arte contemporanea shanghaiana — simile al 798 di Pechino ma più autentico e meno commerciale. Oggi ospita oltre 100 gallerie e studi d'artista: arte contemporanea cinese, fotografia, installazioni, street art sui muri esterni. La street art sulle pareti esterne degli edifici vale già da sola la visita. L'ingresso è libero — le gallerie singole sono gratuite o con piccolo biglietto.",
@@ -107,6 +132,7 @@ export default function ShanghaiSection({ imgs = {} }) {
           items={[
             { icon: "transport", title: "Pudong Airport → taxi → hotel", description: "45–60 min di taxi. Arrivo previsto ~23:05. L'hotel è su Huanghe Road — praticamente nel centro storico." },
             { time: "Cena (se ancora aperto)", icon: "food", title: "Wei Xiang Zhai oppure Jia Jia Tang Bao", description: "In alternativa: Huanghe Road Night Food Street è praticamente fuori dall'hotel — una delle strade di cibo notturno più famose di Shanghai." },
+            { icon: "food", title: "Dolcino: Park Hotel Deli", description: "28 Huanghe Rd, a 5 minuti a piedi dall'hotel. La fila potrebbe essere lunga, ma ne vale la pena." },
           ]}
         />
         <DayCard
@@ -114,24 +140,28 @@ export default function ShanghaiSection({ imgs = {} }) {
           date="1 Maggio · Venerdì"
           title="Skyline & Centro Storico (molta folla)"
           items={[
+            { time: "08:00", icon: "food", title: "Colazione: People Cafe / Manner Coffee", description: "North Bund, Magnolia Plaza L1. Da hotel: metro Linea 2 (People's Square → North Bund, 15 min, 4 CNY). Vista 360° Bund/Pudong." },
             { time: "08:30", icon: "place", title: "Shanghai World Financial Center – Piano 100", highlight: true,
-              description: "Vista a 360° su tutta Shanghai da 474 m. Biglietti quasi certamente solo sul posto — arrivare presto.",
+              description: "Vista a 360° su tutta Shanghai da 474 m. Biglietti sul posto (180 CNY, 09:00–22:00). Da North Bund: metro Linea 2 (Lujiazui, 10 min). ~1h panoramica.",
               attraction: A.swfc },
-            { time: "10:00", icon: "transport", title: "Lujiazui → metro L2 → The Bund", description: "Vista diurna del lungofiume — già bella di giorno, spettacolare di notte." },
-            { icon: "place", title: "The Bund 外滩", highlight: true,
-              description: "52 edifici coloniali di fronte alla skyline moderna di Pudong. Passeggia verso nord per il Rock Bund, meno affollato.",
+            { time: "10:00", icon: "place", title: "Lujiazui → The Bund (a piedi 25 min)", highlight: true,
+              description: "2 km lungo Bund Promenade. Foto top: Galaxy SOHO angle. Tappa: Lu Bo Lang (115 Yuyuan Old Street) — ravioli di granchio con la cannuccia (蟹粉小笼包 takeaway, 6-8 pz ¥45) al banco esterno, mangia camminando.",
               attraction: A.bund },
-            { time: "12:00", icon: "food", title: "Pranzo: Jia Jia Tang Bao 佳家汤包", highlight: true,
-              description: "Il miglior posto per xiaolongbao a Shanghai secondo i locali. Fila inevitabile — ne vale la pena.",
-              attraction: A.jiaJia },
-            { time: "13:30", icon: "place", title: "Yuyuan Garden + City God Temple + Old Town", highlight: true,
-              description: "1.5–2 ore. Molto affollato il 1° maggio — pazienza, vale assolutamente.",
+            { time: "10:40", icon: "place", title: "Yuyuan Garden + City God Temple + Old Town", highlight: true,
+              description: "Biglietti sul posto (40¥, ultimo ingresso 16:00). Molto affollato il 1° maggio. Percorso: Garden → Chenghuang Miao → mercati street food.",
               attraction: A.yuyuan },
-            { time: "17:30", icon: "place", title: "Nanjing Road", description: "La via dello shopping più famosa di Shanghai — 5 km pedonali dal Bund verso People's Square." },
+            { time: "12:00", icon: "food", title: "Pranzo: Jia Jia Tang Bao 佳家汤包", highlight: true,
+              description: "90 Huanghe Rd. Metro Linea 10 da Yuyuan (8 min, 4¥). Il miglior posto per xiaolongbao a Shanghai.",
+              attraction: A.jiaJia },
+            { time: "13:30", icon: "place", title: "Ritorno Yuyuan (post pranzo)", description: "10 min a piedi da Henan South Rd. Continuare visita City God Temple e mercati street food." },
+            { time: "17:30", icon: "place", title: "Nanjing Road", description: "15 min a piedi da Yuyuan. La via dello shopping più famosa di Shanghai — vivace e pedonale.",
+              attraction: A.nanjingRoad },
             { time: "19:30", icon: "place", title: "The Bund di notte 🌃", highlight: true,
-              description: "I grattacieli di Pudong illuminati riflessi nel fiume. Il momento più iconico del viaggio — non mancare.",
+              description: "10 min a piedi da Nanjing. I grattacieli di Pudong illuminati 19:30–21:00. Il momento più iconico del viaggio.",
               attraction: A.bund },
-            { time: "Cena", icon: "food", title: "Wei Xiang Zhai oppure Lai Lai Xiao Long Bao", description: "Wei Xiang Zhai è famoso per i noodles al sesamo (麻酱面). Lai Lai è backup affidabile per xiaolongbao." },
+            { time: "20:30", icon: "food", title: "Cena: Wei Xiang Zhai / Lai Lai", description: "Rientro People's Square, 10 min a piedi da Bund. Wei Xiang Zhai per noodles al sesamo, Lai Lai per xiaolongbao." },
+            { time: "21:00", icon: "place", title: "Opzionale: Traghetto Huangpu", description: "Bund Terminal → Lujiazui (2 CNY, 5 min, ogni 10 min fino 22:30). Vista skyline illuminato. Molto meglio delle crociere turistiche (100+ CNY).",
+              attraction: A.traghetto },
           ]}
         />
         <DayCard
@@ -140,25 +170,30 @@ export default function ShanghaiSection({ imgs = {} }) {
           title="Quartieri & Atmosfere Locali"
           items={[
             { time: "08:30", icon: "place", title: "Jing'an Temple 静安寺", highlight: true,
-              description: "Tempio buddista del III sec. circondato da grattacieli — uno dei contrasti più surreali di Shanghai.",
+              description: "Apre 07:30–18:00 (50 CNY). Metro Linea 2 da hotel (5 min, People's Square Sta.).",
               attraction: A.jingAn },
-            { time: "09:15", icon: "place", title: "Jing'an Kerry Centre", description: "Caffè in zona — la Jing'an ha i migliori specialty coffee di Shanghai." },
-            { time: "10:00", icon: "transport", title: "Taxi → French Concession" },
+            { time: "09:15", icon: "transport", title: "Metro → Changshu Rd", description: "Metro Linea 2 (West Nanjing Rd → Changshu Rd, Linea 7, 2 fermate, 10 min, 4 CNY)." },
+            { time: "09:30", icon: "place", title: "13 De Marzo (Anfu Road 322)", highlight: true,
+              description: "Caffetteria tema orsacchiotto. Cornetti e drink cozy. Arrivare presto per evitare fila. 10:00–21:30.",
+              attraction: A.deMarzo },
+            { time: "09:55", icon: "transport", title: "A piedi → Wukang Rd", description: "800 m nello stesso quartiere Anfu-Wukang (10 min)." },
             { time: "10:15", icon: "place", title: "Wukang Road & Sinan Mansions", highlight: true,
-              description: "Viali alberati con platani francesi e ville Liberty. La via più fotografata di Shanghai.",
+              description: "Architettura art deco, viali alberati con platani francesi. La via più fotografata di Shanghai.",
               attraction: A.frenchConcession },
-            { time: "11:45", icon: "place", title: "M50 Art District 莫干山路50号", highlight: true,
-              description: "Ex fabbriche degli anni '30 trasformate in gallerie. Ingresso libero. Street art esterna imperdibile.",
-              attraction: A.m50 },
-            { time: "13:00", icon: "food", title: "Pranzo: Shang Hai Da Hu Chun 大壶春", description: "Specialità di Shanghai: shengjian bao (小笼包fritti in padella), croccanti sotto e morbidi sopra. Locale storico dal 1932." },
+            { time: "13:00", icon: "food", title: "Pranzo French Concession", description: "Shang Hai Da Hu Chun (shengjian bao) o Lai Lai Xiao Long Bao (backup). Oppure Ren He Guan (crab rice signature, guida Michelin — prenotare via WeChat/Meituan)." },
+            { time: "14:00", icon: "transport", title: "Passeggiata → Tianzifang", description: "20–30 min a piedi (3.4 km scenic)." },
             { time: "14:30", icon: "place", title: "Tianzifang 田子坊", highlight: true,
-              description: "Labirinto di vicoli creativi con gallerie e boutique. Architettura shikumen degli anni '30.",
+              description: "Labirinto di vicoli creativi con gallerie e boutique. Architettura shikumen degli anni '30. Aperto 24h.",
               attraction: A.tianzifang },
-            { time: "16:00", icon: "place", title: "1000 Trees 千树", highlight: true,
-              description: "Il bosco verticale di Heatherwick sul fiume Suzhou. Terrazza panoramica accessibile al pubblico. Perfetto al tramonto.",
+            { time: "15:00", icon: "place", title: "Nudake Haus Cafe", description: "Caffetteria bellissima con cornetti giganti esposti. 20 min a piedi da Tianzifang.",
+              attraction: A.nudake },
+            { time: "15:45", icon: "place", title: "1000 Trees 千树", highlight: true,
+              description: "Taxi 15 min (25 CNY) o metro Linea 11. Architettura, foto, relax. 10:00–22:00 gratuito. Perfetto al tramonto.",
               attraction: A.thousandTrees },
-            { time: "17:30", icon: "place", title: "Xintiandi", description: "Shikumen restaurati con ristoranti e bar eleganti. Qui Mao fondò il PCC nel 1921." },
-            { time: "Cena", icon: "food", title: "Cena a Xintiandi", description: "Renheguan per cibo tradizionale shanghaianese, oppure Sufuli Crab Noodles per i famosi noodles al granchio." },
+            { time: "17:15", icon: "place", title: "Xintiandi (facoltativo ma consigliato)", description: "Taxi 10 min o metro Linea 10. Shikumen restaurati, cena e passeggiata serale. Aperto 24h.",
+              attraction: A.xintiandi },
+            { time: "Cena", icon: "food", title: "Cena a Xintiandi", description: "Renheguan (riso con granchio, guida Michelin) oppure Sufuli Crab Noodles. Rientro a piedi possibile (25 min Nanjing Rd)." },
+            { icon: "transport", title: "Aeroporto: Metro Linea 2", description: "People's Square → Guanglan Rd (45 min, stesso binario opposto) → cambio estensione Linea 2 (4 vagoni) → Pudong Airport (15-20 min). Totale ~1 ora. Ultima corsa 22:30." },
           ]}
         />
       </div>

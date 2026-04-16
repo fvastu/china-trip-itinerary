@@ -61,6 +61,21 @@ const A = {
     history: "Il poeta Du Fu (712–770 d.C.) è considerato il più grande poeta della storia cinese — paragonato a Shakespeare per importanza culturale. Visse qui a Chengdu per 4 anni (759–762) durante i tumulti della Ribellione di An Lushan, componendo oltre 240 poesie considerate capolavori assoluti. La capanna originale era umile (il nome 'cottage' è letterale e non ironico), ma il parco attuale è un museo di 24 ettari con padiglioni, stagni di bambù e sale espositive. Il sito fu ricostruito durante la Song Dynasty (X sec.) dai locali che veneravano la sua memoria. È uno dei luoghi letterari più importanti dell'Asia.",
     photos: [{ image: UNS + "photo-1531386151447-fd76ad50012f.jpg", caption: "I padiglioni e i giardini di bambù del Du Fu Cottage" }],
   },
+  anshunBridge: {
+    name: "Anshun Bridge 安顺桥",
+    history: "L'Anshun Bridge (安顺桥) è uno dei ponti più antichi di Chengdu, originariamente costruito durante la dinastia Yuan (XIII sec.) sul fiume Jinjiang. Il ponte attuale è una ricostruzione in stile tradizionale completata nel 2003, con padiglioni illuminati che di notte si riflettono nell'acqua creando uno dei panorami più fotografati della città. Il nome 'Anshun' significa 'pace e buon auspicio'. La zona circostante è il cuore della vita notturna di Chengdu: ristoranti con terrazza sul fiume, bar con vista e tea house lungo le rive. È il punto di partenza ideale per una passeggiata serale lungo il Jinjiang River — si possono anche valutare brevi crociere sul momento.",
+    photos: [{ image: UNS + "photo-1564349683136-77e08dba1ef7.jpg", caption: "Anshun Bridge illuminato di notte sul fiume Jinjiang" }],
+  },
+  chunxiRoad: {
+    name: "Chunxi Road 春熙路",
+    history: "Chunxi Road (春熙路, 'strada della primavera fiorente') è la zona commerciale più famosa di Chengdu, equivalente a una Times Square locale ma con un'eleganza tutta cinese. Il nome deriva da un verso del classico taoista Daodejing. Ospita il Taikoo Li — un quartiere commerciale e culturale di lusso completamente pedonale, costruito attorno al Tempio Daci (大慈寺) del IV sec. d.C. — e l'IFS con il famoso panda che scala la facciata. La zona è anche la fermata metro più comoda per raggiungere la Zhongshuge Bookstore. Di sera l'atmosfera è moderna e vivace, con grandi mall, boutique e caffè di specialty coffee.",
+    photos: [{ image: UNS + "photo-1531386151447-fd76ad50012f.jpg", caption: "L'atmosfera moderna di Chunxi Road di sera" }],
+  },
+  jiuyanqiao: {
+    name: "Jiuyanqiao 九眼桥",
+    history: "Jiuyanqiao (九眼桥, 'Ponte dei Nove Occhi') è il cuore della nightlife di Chengdu. Il ponte originale fu costruito durante la dinastia Ming (1593) con nove arcate ad arco che si riflettono nel fiume Jinjiang, formando nove 'occhi' perfetti. Il ponte attuale è una ricostruzione, ma la zona circostante è rimasta il punto di ritrovo serale più vivace della città: bar, pub, locali con musica dal vivo e terrazze affacciate sull'acqua. È vicinissimo ad Anshun Bridge — spesso si visitano insieme. Molto frequentata da giovani, expat e studenti delle università vicine. L'atmosfera è completamente diversa dal Chengdu diurno delle teahouse e dei panda.",
+    photos: [{ image: UNS + "photo-1564349683136-77e08dba1ef7.jpg", caption: "Il Ponte dei Nove Occhi riflesso nel Jinjiang River" }],
+  },
   ifs: {
     name: "IFS Building & Panda Rooftop 成都国际金融中心",
     history: "L'IFS (International Finance Square) di Chengdu è diventato famoso in tutto il mondo per una installazione artistica: un panda gigante (7 piani di altezza) che scala la facciata dell'edificio come se stesse cercando di entrare dalle finestre. L'opera dell'artista Lawrence Argent è il selfie spot più fotografato di Chengdu. Il Taikoo Li adiacente ospita il Tempio Daci (大慈寺), fondato nel IV sec. d.C. — uno dei templi buddisti più antichi del Sichuan, ora circondato da boutique di lusso e caffetterie di specialty coffee. Il contrasto antico-moderno è uno dei tratti distintivi di Chengdu.",
@@ -122,10 +137,15 @@ export default function ChengduSection({ imgs = {} }) {
             { time: "17:15–18:00", icon: "place", title: "Zhongshuge Bookstore 钟书阁 (Taikoo Li)", highlight: true,
               description: "La libreria più scenografica di Chengdu: soffitti a specchio, scale infinite. Aperta 10:00–22:00.",
               attraction: A.zhongshuge },
-            { time: "Cena", icon: "food", title: "Hotpot Sichuan 🌶️", highlight: true,
-              description: "Shu Daxia o Da Miao. Chiedi il pot diviso (metà piccante, metà chiaro). L'esperienza gastronomica del viaggio.",
+            { icon: "place", title: "Chunxi Road 春熙路", description: "Zona commerciale più famosa di Chengdu (tipo Times Square). Grandi mall, Taikoo Li, caffè moderni. Fermata metro comoda per Zhongshuge.",
+              attraction: A.chunxiRoad },
+            { time: "Cena", icon: "food", title: "Street food a Jinli o Hotpot Sichuan 🌶️", highlight: true,
+              description: "Opzione 1: Cena street food a Jinli Ancient Street. Opzione 2: Hotpot — Shu Daxia o Da Miao, pot diviso (metà piccante, metà chiaro). L'esperienza gastronomica del viaggio.",
               attraction: A.hotpot },
-            { time: "19:55", icon: "place", title: "Anshun Bridge 安顺桥", description: "Ponte illuminato sul fiume Jinjiang. Ristoranti e bar con vista." },
+            { time: "19:55", icon: "place", title: "Anshun Bridge 安顺桥", description: "Ponte illuminato sul fiume Jinjiang. Ristoranti e bar con vista. Passeggiata Jinjiang River, valutiamo crociera sul momento.",
+              attraction: A.anshunBridge },
+            { icon: "place", title: "Jiuyanqiao 九眼桥", description: "Zona bar e nightlife lungo il fiume. Vicinissima ad Anshun Bridge. Molto frequentata da giovani e expat.",
+              attraction: A.jiuyanqiao },
           ]}
         />
         <DayCard
@@ -142,7 +162,7 @@ export default function ChengduSection({ imgs = {} }) {
               attraction: A.ifs },
             { time: "12:15", icon: "transport", title: "Rientro hotel e recupero bagagli" },
             { time: "12:45", icon: "transport", title: "Taxi / DiDi verso stazione" },
-            { time: "14:41", icon: "transport", title: "Partenza treno → Zhangjiajie", highlight: true, description: "Arrivo in serata. Hotel al 24° piano con vista montagne." },
+            { time: "14:10", icon: "transport", title: "Partenza treno → Zhangjiajie", highlight: true, description: "Arrivo a Zhangjiajie Xi (West) alle 18:49. ~15 min di taxi. Hotel al 24° piano con vista montagne. Cena a Nanmenkou." },
           ]}
         />
       </div>

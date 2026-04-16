@@ -79,8 +79,9 @@ export default function LuoyangSection({ imgs = {} }) {
             { time: "Pranzo", icon: "food", title: "Banchetto dell'Acqua – Zhen Bu Tong 水席", highlight: true,
               description: "24 portate in brodo, piatto iconico di Luoyang. Il ristorante più autentico vicino alle grotte.",
               attraction: A.banchetto },
+            { time: "Pomeriggio", icon: "tip", title: "Tempio del Cavallo Bianco (opzionale)", description: "Fuori mano, dalla parte opposta delle grotte di Longmen. Valutare solo se c'è tempo. Oltre le attrazioni principali non c'è tanto da vedere a Luoyang." },
             { time: "15:30–16:00", icon: "transport", title: "Treno alta velocità → Xi'An", highlight: true,
-              description: "Arrivo a Xi'An entro le 19:00. Hotel vicino South Gate." },
+              description: "Ripartire idealmente alle 15:30–16:00. Arrivo a Xi'An Nord alle 17:42. Hotel vicino South Gate (~2.5 km, taxi)." },
           ]}
         />
       </div>

@@ -100,7 +100,7 @@ export default function ZhangjiajieSection({ imgs = {} }) {
           date="26 Aprile · Sera"
           title="Arrivo a Zhangjiajie"
           items={[
-            { icon: "transport", title: "Arrivo + taxi → hotel", description: "~15 minuti. Hotel al 24° piano con vista sulle montagne." },
+            { time: "18:49", icon: "transport", title: "Arrivo a Zhangjiajie Xi (West) + taxi → hotel", description: "~15 minuti di taxi. Hotel al 24° piano con vista sulle montagne." },
             { icon: "food", title: "Cena: Nanmenkou", description: "Mercato street food vicino all'hotel — piatti Tujia e street food huanese." },
           ]}
         />

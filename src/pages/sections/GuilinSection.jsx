@@ -80,8 +80,8 @@ export default function GuilinSection({ imgs = {} }) {
         />
         <TransportNote
           notes={[
-            "29 aprile – Treno ZhangJiaJie Xi → Guilin ore 7:17, arrivo 14:27. Scendere alla SECONDA stazione, non quella North.",
-            "30 aprile – Treno Guilin → Yangshuo ore 7:50, arrivo 8:14. Al ritorno conviene taxi (~20 min).",
+            "29 aprile – Treno ZhangJiaJie Xi → Guilin ore 7:17, arrivo 14:13. Pochi minuti di taxi (10/15 min) dall'hotel.",
+            "30 aprile – Guilin → Yangshuo: qualsiasi treno prima delle 09:30. Primo treno 7:50, arrivo 8:14. Al ritorno conviene taxi (~20 min, ~1 ora).",
             "30 aprile – Volo Guilin → Shanghai ore 20:25, arrivo 23:05.",
           ]}
         />
@@ -90,7 +90,7 @@ export default function GuilinSection({ imgs = {} }) {
           date="29 Aprile · Mercoledì"
           title="Guilin: Laghi, Pagode & Rice Noodles"
           items={[
-            { time: "07:17", icon: "transport", title: "Treno da ZhangJiaJie Xi → Guilin", description: "Taxi presto per la stazione. Arrivo a Guilin intorno alle 14:27." },
+            { time: "07:17", icon: "transport", title: "Treno da ZhangJiaJie Xi → Guilin", description: "Taxi mattina presto (chiedere a hotel). Arrivo a Guilin intorno alle 14:13. Pochi minuti di taxi dall'hotel (10/15 min)." },
             { time: "~15:00", icon: "place", title: "Elephant Trunk Hill 象鼻山", highlight: true,
               description: "Simbolo di Guilin — la collina che sembra un elefante che beve. Vale anche solo dall'esterno.",
               attraction: A.elephantHill },
@@ -109,7 +109,7 @@ export default function GuilinSection({ imgs = {} }) {
           date="30 Aprile · Giovedì"
           title="Yangshuo in e-bike & Volo per Shanghai"
           items={[
-            { time: "07:50", icon: "transport", title: "Treno Guilin → Yangshuo", description: "Primo treno. Arrivo 8:14. Taxi ~1 ora fino a Shuiedi Dock (Yulong River)." },
+            { time: "07:50", icon: "transport", title: "Treno Guilin → Yangshuo", description: "Qualsiasi treno prima delle 09:30 (primo alle 7:50, arrivo 8:14). Poi taxi ~1 ora fino a Shuiedi Dock (Yulong River). Conviene prenotare ticket barchetta tramite hotel o prendere sul posto." },
             { icon: "place", title: "Bamboo Raft su Yulong River 🛶", highlight: true,
               description: "Zappa di bambù spinta a mano. Prenotare tramite hotel o sul posto a Shuiedi Dock.",
               attraction: A.liRiver },
